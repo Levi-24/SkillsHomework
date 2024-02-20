@@ -18,6 +18,12 @@ for (let i = 0; i < 10; i++) {
 
 $scope.updateRunners = function(){
     $scope.runners = [];
+    angular.forEach($scope.teamMembers, function(member){
+        let fullName = member.firstname + " " + member.lastName;
+        if($scope.runners.indexOf(fullName) === -1){
+            $scope.runners.push(fullName);
+        }
+    })
 }
 
 $scope.formatTime = function(){
