@@ -104,10 +104,9 @@ footer {
 }
 
 #calculator:hover {
-    background-color: #0056b3; /* Darker shade on hover */
+    background-color: #0056b3;
 }
 
-/* Responsive styles */
 @media screen and (max-width: 768px) {
     .logo {
         width: 100px;
